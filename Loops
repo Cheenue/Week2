@@ -1,3 +1,5 @@
+Question 1
+
 package week02;
 
 import java.util.Scanner;
@@ -31,3 +33,39 @@ import java.util.regex.*;
             if (countDown >= 3 && countDown <= 10) {
                 System.out.println("We have lift off!");
             }
+
+
+Question 2
+
+While Loop Practice:
+Create an if/else statement that checks to see if userNumber is more than 10 and under 100.
+If so, execute a while loop that does the following:
+- prints the value of userNumber
+- decrements by 1 until userNumber is less than 10.
+If not, print (exactly) "Your number is not between 10 and 100." to the console, including the "." at the end.
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class CodingQuestion {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int userNumber;
+		userNumber = in.nextInt();
+
+        // Write your code below 
+        
+        if (userNumber > 10 && userNumber < 100) {
+            while (userNumber >= 10){
+                userNumber--;
+            }
+        }
+        
+        
+	}
+}
